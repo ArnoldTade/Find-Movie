@@ -1,0 +1,54 @@
+body {
+  background: #1f1f1f;
+  color: #ffffff;
+}
+
+.appmovie>.row {
+  overflow-x: auto;
+
+  flex-wrap: nowrap;
+
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+
+}
+
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(26, 3, 63, 0.9);
+  width: 300px;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.row>* {
+  flex-shrink: 1;
+}
+
+.form-control {
+  background-color: #141414;
+  color: rgb(255, 255, 255);
+  border-radius: 1.5rem;
+  justify-content: center;
+  border-color: #4b00fa;
+}
+
+.form-control::placeholder {
+  color: #f8f0f0;
+}
