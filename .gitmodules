@@ -1,0 +1,3 @@
+[submodule "utils/find-movie-utils"]
+	path = utils/find-movie-utils
+	url = https://github.com/ArnoldTade/find-movie-utils.git
